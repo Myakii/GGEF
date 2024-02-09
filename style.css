@@ -14,23 +14,13 @@ header {
 }
 
 
-h4 {
-    font-family: 'Inter', sans-serif;
-    font-size: 26px;
-    font-weight: 400;
-    line-height: 31px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-
-h3 {
-    font-family: 'Inter', sans-serif;
-    font-size: 26px;
-    font-weight: 400;
-    line-height: 31px;
-    letter-spacing: 0em;
-    text-align: left;
-
+h3, h4 {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 26px !important;
+    font-weight: 400 !important;
+    line-height: 31px !important;
+    letter-spacing: 0em !important;
+    text-align: left !important;
 }
 
 .custom_case {
@@ -39,7 +29,7 @@ h3 {
 }
 
 body .border {
-    border: 5px solid #dee2e6!important ;
+    border: 5px solid #dee2e6 !important;
 }
 
 body .border-primary {
@@ -58,16 +48,16 @@ body .border-grey {
     border: 5px solid #A1A1A1 !important;
 }
 
-body .text_success { 
-    color: #00A483 !important; 
+body .text_success {
+    color: #00A483 !important;
 }
 
 body .text_primary {
-    color:  #0084BD;
+    color: #0084BD;
 }
 
 body .text_grey {
-    color:  #A1A1A1;
+    color: #A1A1A1;
 }
 
 .title {
@@ -122,12 +112,9 @@ p {
 /* Case année 3 */
 
 .custom_case_3_years {
-    width: 418.5px;
-    height: 164px;
     padding: 36px;
     border-radius: 20px;
     border: 4px;
-
 }
 
 /* Case 4 & 5 années */
@@ -138,7 +125,6 @@ p {
     padding: 36px;
     border-radius: 20px;
     border: 4px;
-
 }
 
 /* Case de la carte flip */
@@ -188,27 +174,42 @@ p {
         padding: 24px 12px;
     }
 
-    .container, .group {
-        margin: 0 !important; 
+    .container,
+    .group {
+        margin: 0 !important;
+        display: block !important;
     }
 
     .container .space-case {
         padding: 1.5em !important;
         align-items: flex-start !important;
         margin-bottom: 1em !important;
+        height: auto;
 
     }
 
-    .title-rncp {
+    .title-rncp6,
+    .title-rncp7 {
         position: relative;
         left: 8.1em;
         transform: rotate(-90deg);
+        margin-bottom: -50px;
+        margin-left: -29px;
     }
 
-    .dates3, .dates45 {
+    .title-rncp6 {
+        margin-top: -50px;
+    }
+
+    .title-rncp7 {
+        margin-top: -30px;
+    }
+
+    .dates3,
+    .dates45 {
         padding: 1em 0;
     }
-    
+
 
     .box-master {
         margin-top: 1em;
@@ -217,13 +218,15 @@ p {
     .container .mb-3 {
         margin: 0rem !important;
     }
-    
+
     .content-block {
         padding: 0 !important;
     }
 
-    body .content-block-master .d-flex {  /* Change la disposition des blocks */
-        display: inline-block !important; } 
+    body .content-block-master .d-flex {
+        /* Change la disposition des blocks */
+        display: inline-block !important;
+    }
 
     .container .m-5 {
         margin: 0rem !important;
@@ -233,32 +236,46 @@ p {
         width: 215%;
     }
 
-    .container .mt-5, .container .my-5 {
+    .container .mt-5,
+    .container .my-5 {
         margin: 0 !important
     }
 
     .custom_case_bachelor {
         padding: 0;
     }
-    
-    .title-first-section.mb-3.col-2 {
+
+    .custom_case_container {
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    .custom_case,
+    .custom_case_flip {
+        width: 100%;
+    }
+
+    .title-first-section {
         margin-left: auto !important;
         margin-right: auto !important;
+        margin-bottom: -50px !important;
         transform: rotate(90deg);
     }
 
-        /* Case universelle */
-    .custom_case,
+    /* Case universelle */
     .custom_case_bachelor,
     .custom_case_3_years,
-    .custom_case_green,
-    .custom_case_flip {
+    .custom_case_green {
         display: flex;
         width: 100%;
-        /* height: auto; */
         flex-direction: column;
         align-items: center;
-    } 
+        height: auto;
+    }
 
+    .card-back {
+        top: 130px;
+        padding-bottom: 36px;
+    }
 
 }
