@@ -16,18 +16,24 @@
         <article>
             <section>
                 <div class="container">
-                    <header class="d-flex align-items-center px-3">
-                        <div class="divider mx-3"> </div>
+                    <!-- Le display flex permet d'aligné la barre ainsi que les années -->
+                    <header class="d-flex align-items-center">
+                        <div class="divider"> </div>
                         <h3 class="dates text-center flex-grow-1">Année 1 & 2</h3>
-                        <div class="divider mx-3"> </div>
+                        <div class="divider"> </div>
                     </header>
-                    <div class="group row align-items-center m-5 custom_case_container">
+                    <!-- le row a été créé afin de suivre la structure de grille de boostrap my et mx sont des margins pour aéré l'ensemble et le md sont défini les écrans medium  -->
+                    <!-- group permet de prendre la relève pour la version mobile et ainsi retirer le display flex afin d'avoir les éléments en vertical -->
+                    <!-- custom_case_container en version mobile permet d'aranger les éléments sur plusieurs lignes si besoin -->
+                    <div class="group row my-md-5 mx-md-2 custom_case_container">
                         <div class="col-sm-12 col-md p-0 d-sm-flex">
                             <div class="title-first-section col-2 p-0">
+                                <!-- title permet d'écrire de façon vertical... -->
                                 <h4
                                     class="title text-center border-dark bg-dark text-white justify-content-center d-flex align-items-center">
                                     Diplôme d'Etat</h4>
                             </div>
+                            <!-- content-block est utiliser dans la version mobile afin de retirer le padding -->
                             <div class="content-block col-sm-12 col-md p-md-0">
                                 <div class="space-case border border-2 border-dark custom_case">
                                     <h3 class="font-weight-bold">BTS</h3>
@@ -50,13 +56,15 @@
         <article>
             <section>
                 <div class="container">
-                    <header class="d-flex align-items-center px-3">
-                        <div class="divider mx-3"></div>
+                    <header class="d-flex align-items-center">
+                        <div class="divider"></div>
+                        <!-- dates et dates 3 sont utiliser dans la version mobile afin d'aéré le h3 des années -->
                         <h3 class="dates dates3 text-center flex-grow-1">Année 3</h3>
-                        <div class="divider mx-3"></div>
+                        <div class="divider"></div>
                     </header>
-                    <div class="row m-5">
+                    <div class="row my-5">
                         <div class="col-sm-12 col-md p-0">
+                            <!-- space-case est utiliser dans la version mobile afin de placer les éléments à gauche-->
                             <div class="space-case border border-grey custom_case_3_years">
                                 <h3 class="font-weight-bold">Année Passerelle</h3>
                                 <h4 class="text_grey">Ressources Humaines</h4>
@@ -78,21 +86,24 @@
         <article>
             <section>
                 <div class="container">
-                    <header class="d-flex align-items-center px-3">
-                        <div class="divider mx-3"></div>
+                    <header class="d-flex align-items-center">
+                        <div class="divider"></div>
+                        <!-- dates et dates 45 sont utiliser dans la version mobile afin d'aéré le h3 des années -->
                         <h3 class="dates dates45 text-center flex-grow-1">Année 4 & 5</h3>
-                        <div class="divider mx-3"></div>
+                        <div class="divider"></div>
                     </header>
-                    <div class="row m-5">
+                    <div class="row my-md-5 mx-md-2">
                         <div class="content-block-master col-sm-12 col-md d-flex p-0">
                             <div class="row align-items-center custom_case_container">
                                 <!-- Titre 6 -->
-                                <div class="col-sm-12 col-md d-flex p-0 align-items-center m-md-2">
+                                <div class="col-sm-12 col-md d-flex p-0 align-items-center">
+                                    <!-- title-rncp6 et title-rncp7 sont utiliser dans la version mobile afin de remettre en horizontal les titres et de les placer -->
                                     <h4
                                         class="title title-rncp6 text-center bg-dark text-white justify-content-center d-flex align-items-center">
                                         Titre
                                         RNCP 6
                                     </h4>
+                                    <!-- section-master en version medium permet d'ajouter un margin à gauche et dans la version mobile de retirer tous les margin gauche -->
                                     <div class="space-case border border-primary custom_case p-5 section-master">
                                         <h3 class="font-weight-bold">Mastère 1</h3>
                                         <h4 class="text_primary">Responsable RH</h4>
@@ -107,7 +118,7 @@
                                     <p>Alternance</p>
                                 </div>
                                 <!-- Titre 7 -->
-                                <div class="col-sm-12 col-md d-flex p-0 align-items-center m-md-2">
+                                <div class="col-sm-12 col-md d-flex p-0 align-items-center mt-5">
                                     <h4
                                         class="title title-rncp7 text-center bg-dark text-white d-flex justify-content-center align-items-center">
                                         Titre
@@ -115,6 +126,7 @@
                                     </h4>
                                     <!-- Rotating card -->
                                     <div class="card-flip d-flex align-items-center section-master">
+                                        <!-- Pour l'animation (partie "FLIP CARD dans le fichier.css") -->
                                         <div class="card-front">
                                             <div class="card-body-front border border-primary custom_case_flip">
                                                 <h3 class="font-weight-bold">Mastère 2</h3>
@@ -126,7 +138,7 @@
                                             <div
                                                 class="card-body-back border border-primary custom_case_flip card_back ">
                                                 <div class="d-flex">
-                                                    <h3 class="font-weight-bold col-sm-4">Mastère 2</h3>
+                                                    <h3 class="font-weight-bold">Mastère 2</h3>
                                                     <h4 div="col-sm-4"> - Management RH</h4>
                                                 </div>
                                                 <h4 class="text_primary">Spécialisations :</h4>
@@ -144,12 +156,14 @@
                         </div>
                         <!-- Mastère -->
                         <div class="col-12 col-md-4 p-0 d-flex justify-content-end">
+                            <!-- La div sera caché en général mais devient un display:block en version sm -->
                             <div class="border border-success custom_case_green h-100 d-none d-sm-block p-4">
                                 <!-- Cacher si taille xs -->
                                 <h3 class="space-case font-weight-bold">Mastère 1 & 2</h3>
                                 <h4 class="text_success">Conseil RH et stratégie emploi/compétences</h4>
                                 <p>Alternance</p>
                             </div>
+                            <!-- La div est visible en général mais devient un display:none en version medium -->
                             <div class="box-master space-case border border-success custom_case  d-block d-md-none">
                                 <!-- N'apparait pas si au-dessus de écran très petits (xs) -->
                                 <h3 class="font-weight-bold">Mastère 2</h3>

@@ -87,7 +87,7 @@ p {
 }
 
 .section-master {
-    margin-left: 6.25em;
+    margin-left: 10em;
 }
 
 /* Case universelle */
@@ -143,13 +143,16 @@ p {
 }
 
 /* FLIP CARD */
+/* En passant la souris sur la carte voulu, elle se cache et fait apparaitre après de léger miliseconde une autre div qui comporte la carte-back qui sera en position absolue afin d'être placer au même endroit que la carte-front
+Pour l'effet de rotation gauche droite, j'ai utilisé rotateY */
+
 .card-flip>div {
     backface-visibility: hidden;
     transition: transform 300ms;
     transition-timing-function: linear;
     width: 100%;
     height: 100%;
-    display: flex;
+    /* display: flex; */
 }
 
 .card-front {
