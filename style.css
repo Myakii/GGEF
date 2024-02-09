@@ -33,6 +33,43 @@ h3 {
 
 }
 
+.custom_case {
+    padding-left: 2em;
+    padding-top: 2em;
+}
+
+body .border {
+    border: 5px solid #dee2e6!important ;
+}
+
+body .border-primary {
+    border: 5px solid #0084BD !important;
+}
+
+body .border-dark {
+    border: 5px solid #343a40 !important;
+}
+
+body .border-success {
+    border: 5px solid #00A483 !important;
+}
+
+body .border-grey {
+    border: 5px solid #A1A1A1 !important;
+}
+
+body .text_success { 
+    color: #00A483 !important; 
+}
+
+body .text_primary {
+    color:  #0084BD;
+}
+
+body .text_grey {
+    color:  #A1A1A1;
+}
+
 .title {
     writing-mode: vertical-rl;
     text-orientation: mixed;
@@ -64,8 +101,8 @@ p {
 .custom_case {
     width: 446px;
     height: 227px;
-    padding: 36px;
     border-radius: 20px;
+    border: 4px;
 }
 
 .custom_case_container {
@@ -109,7 +146,8 @@ p {
 .custom_case_flip {
     height: 300px;
     width: 450px;
-    padding: 36px;
+    padding-left: 36px;
+    padding-top: 36px;
     border-radius: 20px;
     border: 4px;
 }
@@ -143,21 +181,84 @@ p {
     transform: rotateY(0deg);
 }
 
-@media (max-width:500px) {
 
+@media (max-width:500px) {
     .title {
         border-radius: 20px;
+        padding: 24px 12px;
+    }
+
+    .container, .group {
+        margin: 0 !important; 
+    }
+
+    .container .space-case {
+        padding: 1.5em !important;
+        align-items: flex-start !important;
+        margin-bottom: 1em !important;
+
+    }
+
+    .title-rncp {
+        position: relative;
+        left: 8.1em;
         transform: rotate(-90deg);
     }
 
-    /* Case universelle */
+    .dates3, .dates45 {
+        padding: 1em 0;
+    }
+    
+
+    .box-master {
+        margin-top: 1em;
+    }
+
+    .container .mb-3 {
+        margin: 0rem !important;
+    }
+    
+    .content-block {
+        padding: 0 !important;
+    }
+
+    body .content-block-master .d-flex {  /* Change la disposition des blocks */
+        display: inline-block !important; } 
+
+    .container .m-5 {
+        margin: 0rem !important;
+    }
+
+    .dates {
+        width: 215%;
+    }
+
+    .container .mt-5, .container .my-5 {
+        margin: 0 !important
+    }
+
+    .custom_case_bachelor {
+        padding: 0;
+    }
+    
+    .title-first-section.mb-3.col-2 {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        transform: rotate(90deg);
+    }
+
+        /* Case universelle */
     .custom_case,
     .custom_case_bachelor,
     .custom_case_3_years,
     .custom_case_green,
     .custom_case_flip {
+        display: flex;
         width: 100%;
-        height: auto;
-    }
+        /* height: auto; */
+        flex-direction: column;
+        align-items: center;
+    } 
+
 
 }
